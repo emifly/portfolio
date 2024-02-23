@@ -5,8 +5,17 @@ main {
 }
 
 .about-me {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 40%;
   background-color: lightskyblue;
+}
+
+.about-me-image {
+  width: 75%;
+  margin: 2rem 0 0 2rem;
 }
 
 .my-projects {
