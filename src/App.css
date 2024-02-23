@@ -1,7 +1,7 @@
 main {
   display: flex;
   align-items: stretch;
-  min-height: 100%;
+  height: 100%;
 }
 
 .about-me {
@@ -10,6 +10,32 @@ main {
 }
 
 .my-projects {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
   width: 60%;
+  padding: 1.5rem;
   background-color: khaki;
+}
+
+.project-tile {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: stretch;
+  width: calc(50% - 0.75rem);
+  background-color: lightpink;
+  text-decoration: none;
+  transition: filter 0.25s;
+}
+
+.project-tile:hover {
+  filter: brightness(0.9);
+}
+
+.project-details {
+  padding: 50% 1.5rem 0;
+  background: linear-gradient(to bottom, transparent, #0008);
+  text-align: center;
+  color: white;
 }
